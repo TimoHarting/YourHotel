@@ -52,6 +52,7 @@ namespace YourHotel
             this.restaurant.TabIndex = 1;
             this.restaurant.Text = "Restaurant";
             this.restaurant.UseSelectable = true;
+            this.restaurant.Click += new System.EventHandler(this.restaurant_Click);
             // 
             // spa
             // 

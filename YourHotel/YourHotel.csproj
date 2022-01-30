@@ -56,7 +56,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\logon.cs" />
+    <Compile Include="controller\resaurantFormController.cs" />
     <Compile Include="db\dbconnection.cs" />
+    <Compile Include="forms\restaurantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\restaurantForm.Designer.cs">
+      <DependentUpon>restaurantForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,8 +76,13 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="objects\food.cs" />
+    <Compile Include="objects\foodCategory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\restaurantForm.resx">
+      <DependentUpon>restaurantForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
