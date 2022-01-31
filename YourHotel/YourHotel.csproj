@@ -58,6 +58,12 @@
     <Compile Include="controller\logon.cs" />
     <Compile Include="controller\resaurantFormController.cs" />
     <Compile Include="db\dbconnection.cs" />
+    <Compile Include="forms\restaurantBillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\restaurantBillForm.Designer.cs">
+      <DependentUpon>restaurantBillForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\restaurantForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,10 +82,19 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="objects\food.cs" />
-    <Compile Include="objects\foodCategory.cs" />
+    <Compile Include="objects\restaurant\bill.cs" />
+    <Compile Include="objects\hotel\customer.cs" />
+    <Compile Include="objects\hotel\room.cs" />
+    <Compile Include="objects\restaurant\billDetail.cs" />
+    <Compile Include="objects\restaurant\foodObjects\food.cs" />
+    <Compile Include="objects\restaurant\foodObjects\foodCategory.cs" />
+    <Compile Include="objects\restaurant\tableObjects\table.cs" />
+    <Compile Include="objects\restaurant\tableObjects\tableDetail.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\restaurantBillForm.resx">
+      <DependentUpon>restaurantBillForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\restaurantForm.resx">
       <DependentUpon>restaurantForm.cs</DependentUpon>
     </EmbeddedResource>
