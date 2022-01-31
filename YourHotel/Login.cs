@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace YourHotel
@@ -22,8 +17,8 @@ namespace YourHotel
 
             if(controller.logon.login(uname, pw) == true)
             {
-                Main m = new Main();
-                m.Show();
+                config.getconfig.loggedin = true;
+                this.Close();
             }
             else
             {

@@ -13,7 +13,17 @@ namespace YourHotel
     {
         public Main()
         {
-            InitializeComponent();
+            Login l = new Login();
+            l.ShowDialog();
+
+            if (config.getconfig.loggedin)
+            {
+                InitializeComponent();
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
         }
 
         private void restaurant_Click(object sender, EventArgs e)
