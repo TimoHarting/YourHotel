@@ -28,5 +28,16 @@ namespace YourHotel.objects.hotel
 
             return dset;
         }
+
+        public static DataSet LoadRoomIDs()
+        {
+            DataSet dset = new DataSet();
+
+            string query = "Select id From zimmer";
+
+            dset = db.dbconnection.Readout(query);
+
+            return dset;
+        }
     }
 }
